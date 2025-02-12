@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Terraform
+*.tfstate.backup
+*.tfstate.backup.*
+*.tfvars
+*.tfstate
