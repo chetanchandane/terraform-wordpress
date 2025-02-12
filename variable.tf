@@ -10,7 +10,7 @@ variable "aws_key" {
   description = "AWS Key Pair Name"
 }
 
-variable "aws_access_key"{
+variable "aws_access_key_id"{
   type = string
   description = "AWS Access Key"
   
