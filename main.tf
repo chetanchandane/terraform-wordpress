@@ -8,6 +8,15 @@ provider "aws" {
 #     aws_key = "My_AWS_key"   # SSH key pair name for EC2 instance access
 # }
 
+# Configure the S3 backend for storing the Terraform state
+terraform {
+  backend "s3" {
+    bucket         = "my-activity-swen-614"
+    key            = "tfstate-folder/terraform.tfstate"
+    region         = "us-east-1"
+    encrypt = false
+  }
+}
 # Security group to allow HTTP, HTTPS, and SSH traffic
 resource "aws_security_group" "wordpress_sg" {
   name        = "wordpress-security-group"
