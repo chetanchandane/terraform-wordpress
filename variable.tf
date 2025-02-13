@@ -5,18 +5,4 @@ variable "instance_type" {
   default     = "t2.micro"  # Default to t2.micro if no value is provided
 }
 
-variable "aws_key" {
-  type = string
-  description = "AWS Key Pair Name"
-}
 
-variable "aws_access_key"{
-  type = string
-  description = "AWS Access Key"
-  
-}
-
-variable "aws_secret_key" {
-  type = string
-  description = "AWS Secret Key"
-}
