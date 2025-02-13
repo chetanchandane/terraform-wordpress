@@ -55,9 +55,7 @@ jobs:
       # Step 6: Apply the infrastructure changes
       - name: Terraform Apply
         run: terraform apply -auto-approve # Auto-approve flag skips manual confirmation
-<<<<<<< HEAD
-        
-=======
+
   # Job Destroy
   terraform_destroy:
     name: "Terraform_destroy"
@@ -97,4 +95,4 @@ jobs:
       # Step 6: Destroy the infrastructure
       - name: Terraform Destroy
         run: terraform destroy -auto-approve    
->>>>>>> 4156bc2b6db722e0d9b60a0ee075c2470ef5c0f8
+
